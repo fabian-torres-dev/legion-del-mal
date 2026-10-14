@@ -1,11 +1,11 @@
-![Estático](https://img.shields.io/badge/Legion--del--Mal-Última%20Versión-blue)
+![Estático](https://img.shields.io/badge/Legion--del--Mal-Última%20Versión-green)
 
 ![Con logo](https://img.shields.io/badge/Git-2.52-F05032?style=for-the-badge&logo=git&logoColor=yellow)
 
 ![Workflow](https://img.shields.io/github/actions/workflow/status/fabian-torres-dev/legion-del-mal/ci.yml)
 ![Release](https://img.shields.io/github/v/release/fabian-torres-dev/legion-del-mal)
 ![Issues](https://img.shields.io/github/issues/fabian-torres-dev/legion-del-mal)
-![Último commit](https://img.shields.io/github/last-commit/fabian-torres-dev/legion-del-mal)
+![Último commit](https://img.shields.io/github/last-commit/fabian-torres-dev/legion-del-mal)q
 ![Licencia](https://img.shields.io/github/license/fabian-torres-dev/legion-del-mal?&cacheSeconds=60)
 
 # 🦹‍♂️ La Legión del Mal
