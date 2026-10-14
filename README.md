@@ -1,4 +1,14 @@
-# 🦹‍♂️ La Legión del Mal
+![Estático](https://img.shields.io/badge/Legion--del--Mal-Última%20Versión-blue)
+
+![Con logo](https://img.shields.io/badge/Git-2.52-F05032?style=for-the-badge&logo=git&logoColor=yellow)
+
+![Workflow](https://img.shields.io/github/actions/workflow/status/fabian-torres-dev/legion-del-mal/ci.yml)
+![Release](https://img.shields.io/github/v/release/fabian-torres-dev/legion-del-mal)
+![Issues](https://img.shields.io/github/issues/fabian-torres-dev/legion-del-mal)
+![Último commit](https://img.shields.io/github/last-commit/fabian-torres-dev/legion-del-mal)
+![Licencia](https://img.shields.io/github/license/fabian-torres-dev/legion-del-mal)
+
+#  La Legión del Mal
 
 > _"El mundo no se conquista con fuerza bruta, se conquista con un buen plan y control de versiones."_
 > — Lex Luthor, fundador
@@ -10,23 +20,23 @@ Somos la alianza definitiva de supervillanos. Mientras los héroes se dividen en
 ## Estructura de la organización!!
 
 ```
-📁 planes/          → Operaciones aprobadas por el Consejo
-📁 miembros/        → Fichas de cada miembro activo
-📁 guaridas/        → Ubicaciones y estado de nuestras bases
-📁 inteligencia/    → Expedientes de los héroes enemigos
-📄 misiones.yaml    → Estado global de todas las misiones
-📄 README.md      → Documentación principal del repositorio
-📄 nuevas-misiones.yaml    → Estado global de las nuevas misiones
+ planes/          → Operaciones aprobadas por el Consejo
+ miembros/        → Fichas de cada miembro activo
+ guaridas/        → Ubicaciones y estado de nuestras bases
+ inteligencia/    → Expedientes de los héroes enemigos
+ misiones.yaml    → Estado global de todas las misiones
+ README.md      → Documentación principal del repositorio
+ nuevas-misiones.yaml    → Estado global de las nuevas misiones
 ```
 
 ## El Consejo de Villanos!!
 
 | Rango                     | Miembro    | Rol                                                     |
 | ------------------------- | ---------- | ------------------------------------------------------- |
-| 🥇 Líder supremo          | Lex Luthor | Fundador, financista y estratega principal              |
-| 🥈 Segundo al mando       | Magneto    | Estratega militar y reclutamiento de mutantes           |
-| 🥉 Jefa de infiltración   | Mystique   | Espionaje, identidades falsas y operaciones encubiertas |
-| ⚙️ Director de tecnología | Brainiac   | Sistemas, armamento y recopilación de datos             |
+|  Líder supremo          | Lex Luthor | Fundador, financista y estratega principal              |
+|  Segundo al mando       | Magneto    | Estratega militar y reclutamiento de mutantes           |
+|  Jefa de infiltración   | Mystique   | Espionaje, identidades falsas y operaciones encubiertas |
+|  Director de tecnología | Brainiac   | Sistemas, armamento y recopilación de datos             |
 
 ## Miembros activos (campo)
 
@@ -47,9 +57,9 @@ Somos la alianza definitiva de supervillanos. Mientras los héroes se dividen en
 
 ## Estado actual
 
-📡 **Misión activa:** Operación Banco Mundial
-🔬 **En desarrollo:** Satélite Congelador
-📋 **En planificación:** Proyecto Krypton (clonar a Superman)
+ **Misión activa:** Operación Banco Mundial
+ **En desarrollo:** Satélite Congelador
+ **En planificación:** Proyecto Krypton (clonar a Superman)
 
 ## Enemigos principales
 
