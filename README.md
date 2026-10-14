@@ -8,7 +8,6 @@
 ![Último commit](https://img.shields.io/github/last-commit/fabian-torres-dev/legion-del-mal)
 ![Licencia](https://img.shields.io/github/license/fabian-torres-dev/legion-del-mal)
 
-
 # 🦹‍♂️ La Legión del Mal
 
 > _"El mundo no se conquista con fuerza bruta, se conquista con un buen plan y control de versiones."_
@@ -38,6 +37,7 @@ Somos la alianza definitiva de supervillanos. Mientras los héroes se dividen en
 | 🥈 Segundo al mando       | Magneto    | Estratega militar y reclutamiento de mutantes           |
 | 🥉 Jefa de infiltración   | Mystique   | Espionaje, identidades falsas y operaciones encubiertas |
 | ⚙️ Director de tecnología | Brainiac   | Sistemas, armamento y recopilación de datos             |
+
 
 ## Miembros activos (campo)
 
