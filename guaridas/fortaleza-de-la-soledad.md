@@ -5,3 +5,9 @@ Superman. Se encuentra ubicada en el Ártico y sirve como el refugio
 secreto del Hombre de Acero. Esta fortaleza es conocida por su
 arquitectura cristalina y su diseño futurista, que refleja la
 herencia kryptoniana de Superman.
+
+## Lugar
+
+La Fortaleza de la Soledad esta construida con cristales de Krypton,
+lo que le da un aspecto brillante y etéreo. Su ubicación remota en el 
+Ártico.. 
