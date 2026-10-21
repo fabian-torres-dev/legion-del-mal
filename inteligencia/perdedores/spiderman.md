@@ -46,3 +46,15 @@ En ciertas continuidades de los cómics, Peter y Mary Jane tienen una hija llama
 7. Teresa Parker (hermana en algunas historias)
 
 Es presentada como hermana de Peter en determinadas historias de los cómics, vinculada también al mundo del espionaje.
+
+## Películas
+
+Spider-Man (2002)
+Spider-Man 2 (2004)
+Spider-Man 3 (2007)
+The Amazing Spider-Man (2012)
+The Amazing Spider-Man 2 (2014)
+Spider-Man: Homecoming (2017)
+Spider-Man: Lejos de casa (2019)
+Spider-Man: Sin camino a casa (2021)
+Spider-Man: Un nuevo día (2026)
