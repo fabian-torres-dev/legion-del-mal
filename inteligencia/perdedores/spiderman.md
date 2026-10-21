@@ -16,3 +16,33 @@ Su identidad más conocida es Peter Parker, un joven que obtiene poderes especia
 8. Rhino (Rinoceronte)
 9. Kingpin (Rey del Crimen)
 10. Carnage (Matanza)
+
+## Familiares
+
+1. Peter Parker
+
+Es la identidad secreta más conocida de Spider-Man. Es un joven inteligente que obtiene sus poderes después de la mordedura de una araña.
+
+2. Ben Parker (tío Ben)
+
+Es el tío de Peter y una de las figuras más importantes de su vida. Su muerte le enseña a Peter que debe usar sus poderes para ayudar a los demás.
+
+3. May Parker (tía May)
+
+Es la tía que cría a Peter después de la muerte de sus padres. Le brinda cariño, apoyo y orientación moral.
+
+4. Richard Parker y Mary Parker (sus padres)
+
+En muchas versiones son agentes relacionados con actividades de inteligencia. Peter queda huérfano siendo niño y es criado por sus tíos.
+
+5. Mary Jane Watson
+
+Es una de las parejas más importantes de Peter Parker. En los cómics, llegan a casarse en algunas continuidades.
+
+6. Mayday Parker (su hija en algunas historias)
+
+En ciertas continuidades de los cómics, Peter y Mary Jane tienen una hija llamada Mayday, que hereda poderes arácnidos y se convierte en Spider-Girl.
+
+7. Teresa Parker (hermana en algunas historias)
+
+Es presentada como hermana de Peter en determinadas historias de los cómics, vinculada también al mundo del espionaje.
