@@ -10,4 +10,17 @@ jobs:
       # Esta es nuestra primera acción | lo que quiero que suceda
       - name: El agente se presenta
         run: echo "Soy Lex Luthor, y el líder de la legión del Mal"
-      
+
+      # Usamos interpolación de un string 
+      # sha -> identificador único de la tx
+      - name: Reporte de identidad
+        run: |  
+          echo "Reporte de identidad"
+          echo "===================="
+          echo ""
+          echo "Nombre clave: ${{ github.actor}}"
+          echo ""
+          echo "Contexto de Github" 
+          echo "Repo: ${{ github.repository}}"  
+          echo "Operación: ${{ github.sha}}"
+          echo "Metadata: ${{ toJson(github) }}"  
