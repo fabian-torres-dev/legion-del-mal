@@ -1,0 +1,19 @@
+name: ❤️‍🔥 Acceso a la Fortaleza Prohibida
+# Se detona el flujo de trabajo cuando se hace un push
+on: push
+
+jobs:
+  acceso-a-la-base:
+    runs-on: ubuntu-latest
+    
+    steps:
+      # Esta es nuestra primera acción | lo que quiero que suceda
+      - name: El agente llega a la fortaleza
+        # Listar todos los archivos incluyendo los invisibles u ocultos
+        run: |
+            echo "Agente ${{ github.actor }} llega a la fortaleza prohibida"
+            echo ""
+            echo "Buscar los archivos de la legión"
+            ls -la
+            echo ""
+            echo "❌ pero qué paso ? no hay nada"
