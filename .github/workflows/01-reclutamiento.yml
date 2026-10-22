@@ -1,0 +1,13 @@
+name: Reclutamiento de Agente
+# Se detona el flujo de trabajo cuando se hace un push
+on: push
+
+jobs:
+  reporte-de-reclutamiento:
+    runs-on: ubuntu-latest
+    
+    steps:
+      # Esta es nuestra primera acción | lo que quiero que suceda
+      - name: El agente se presenta
+        run: echo "Soy Lex Luthor, y el líder de la legión del Mal"
+      
