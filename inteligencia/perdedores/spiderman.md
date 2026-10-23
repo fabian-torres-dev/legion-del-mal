@@ -58,3 +58,8 @@ Spider-Man: Homecoming (2017)
 Spider-Man: Lejos de casa (2019)
 Spider-Man: Sin camino a casa (2021)
 Spider-Man: Un nuevo día (2026)
+
+## Estrategia recomendada
+
+**Mantener a Spiderman en contacto social**
+Spiderman es una persona muy sociable y que depende mucho de su familia.
