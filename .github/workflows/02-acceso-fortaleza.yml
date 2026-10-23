@@ -17,3 +17,19 @@ jobs:
             ls -la
             echo ""
             echo "❌ pero qué paso ? no hay nada"
+      - name: "Brainiac desbloquea la bóveda"
+        # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
+        # Damos permiso para ver los archivos del repositorio -> actions/checkout@v4
+        uses: actions/checkout@v4
+      - name: "Ahora sí, vamos a ver los planes"
+        run: |
+            echo "Buscar los archivos de la legión"
+            ls -la
+            echo ""
+            echo "✅ Ahora sí, hay archivos"
+            echo "Planes:"
+            ls planes/
+            echo "Villanos:"
+            ls villanos/
+            echo "Inteligencia:"
+            ls inteligencia/
