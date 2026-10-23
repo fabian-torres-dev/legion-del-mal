@@ -35,10 +35,17 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
+      # Vamos hacer una instalación | Un paso antes
+      - name: 'Instalar el transmisor de la legión'
+        run: sudo apt-get install -y cowsay
       # Damos permiso para ver los archivos del repositorio -> actions/checkout@v4
       # - uses: actions/checkout@v4
       - name: 'Imprimir inputs o parámetros de entrada del workflow'
         run: |
+          echo "======================================================================"
+          echo "                  Transmisión interceptada                            "
+          echo "======================================================================"
+          echo ""
           echo "El villano que envía el mensaje es: ${{ github.event.inputs.villano }}"
           echo "El mensaje enviado es: ${{ github.event.inputs.mensaje }}"
           echo "La prioridad del mensaje es: ${{ github.event.inputs.prioridad }}"
@@ -46,4 +53,13 @@ jobs:
           echo "Villano: ${{ inputs.villano }}"
           echo "Mensaje: ${{ inputs.mensaje }}"
           echo "Prioridad: ${{ inputs.prioridad }}"
-      
+          echo ""
+          echo "De: ${{ inputs.villano}}"
+          echo ""
+          echo "Fecha: $(date -u + "%d/%m/%Y -%H:%M UTC")"
+          echo "------ Mensajes --------"
+          cowsay -f eyes "${{ inputs.mensaje }}"
+          echo ""
+          echo "------ ${{ inputs.villano }} -------"
+          echo "..."
+          
