@@ -36,5 +36,14 @@ jobs:
 
     steps:
       # Damos permiso para ver los archivos del repositorio -> actions/checkout@v4
-      - uses: actions/checkout@v4
+      # - uses: actions/checkout@v4
+      - name: 'Imprimir inputs o parámetros de entrada del workflow'
+        run: |
+          echo "El villano que envía el mensaje es: ${{ github.event.inputs.villano }}"
+          echo "El mensaje enviado es: ${{ github.event.inputs.mensaje }}"
+          echo "La prioridad del mensaje es: ${{ github.event.inputs.prioridad }}"
+          echo ""
+          echo "Villano: ${{ inputs.villano }}"
+          echo "Mensaje: ${{ inputs.mensaje }}"
+          echo "Prioridad: ${{ inputs.prioridad }}"
       
