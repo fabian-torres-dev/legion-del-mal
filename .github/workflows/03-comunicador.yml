@@ -56,7 +56,7 @@ jobs:
           echo ""
           echo "De: ${{ inputs.villano}}"
           echo ""
-          echo "Fecha: $(date -u + "%d/%m/%Y -%H:%M UTC")"
+          echo "Fecha: $(date +"%d/%m/%Y - %H:%M")"
           echo "------ Mensajes --------"
           cowsay -f eyes "${{ inputs.mensaje }}"
           echo ""
