@@ -1,0 +1,26 @@
+name: Comunicador de la Legión
+
+on:
+  workflow_dispatch:
+    inputs:
+      villano:
+        description: '¿ Qué villano envía el mensaje ?'
+        # Indica que el campo villano es obligatorio
+        required: true
+        type: choice
+        # Aca podemos colocar todos los villanos que necesitemos que puedan enviar un mensaje
+        options: 
+          - Lex Luthor
+          - Magneto
+          - Joker
+          - Mystique
+          - Brainiac
+
+jobs:
+  transmitir-mensaje:
+    runs-on: ubuntu-latest
+
+    steps:
+      # Damos permiso para ver los archivos del repositorio -> actions/checkout@v4
+      - uses: actions/checkout@v4
+      
