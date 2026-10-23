@@ -1,7 +1,8 @@
 name: ❤️‍🔥 Acceso a la Fortaleza Prohibida
 # Se detona el flujo de trabajo cuando se hace un push
-on: push
-
+# on: push
+on:
+    workflow_dispatch:
 jobs:
   acceso-a-la-base:
     runs-on: ubuntu-latest
