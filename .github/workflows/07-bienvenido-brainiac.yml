@@ -1,15 +1,16 @@
 name: 🤖 Bienvenido Brainiac - Nuevo issue
 
 on:
-  issues:
-    types: [opened]
-
+  #issues:
+  #  types: [opened]
+  workflow_dispatch:
+      
 permissions:
   issues: write
 
 jobs:
   responder-issue:
-    name: Responder al issue con mensaje de Brainiac
+    name: Responder al issue con mensaje de Brainiac@
     runs-on: ubuntu-latest
     
     steps:
@@ -35,3 +36,26 @@ jobs:
               issue_number: context.payload.issue.number,
               body: cuerpo
             });
+      
+      - name: Notificar por correo a Brainiac
+        uses: dawidd6/action-send-mail@v3
+        with:
+          server_address: smtp.gmail.com
+          server_port: 465
+          secure: true
+          username: ${{ secrets.MAIL_USERNAME }}
+          password: ${{ secrets.MAIL_PASSWORD }}
+          from: Brainiac Bot <${{ secrets.MAIL_USERNAME }}>
+          to: fab81leo@gmail.com
+          subject: "🧠 Nuevo issue #${{ github.event.issue.number }}: ${{ github.event.issue.title }}"
+          html_body: |
+            <h2>🧠 Nuevo issue registrado en el banco de datos</h2>
+            <ul>
+              <li><strong>Repositorio:</strong> ${{ github.repository }}</li>
+              <li><strong>Issue:</strong> #${{ github.event.issue.number }}</li>
+              <li><strong>Título:</strong> ${{ github.event.issue.title }}</li>
+              <li><strong>Autor:</strong> ${{ github.event.issue.user.login }}</li>
+              <li><strong>Enlace:</strong> <a href="${{ github.event.issue.html_url }}">{{ github.event.issue.html_url }}</a></li>
+            </ul>
+            <hr>
+            <p><em>Mi intelecto de nivel 12 procesará tu solicitud en breve.</em></p>
