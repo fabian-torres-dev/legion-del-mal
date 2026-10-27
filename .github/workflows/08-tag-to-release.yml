@@ -1,0 +1,101 @@
+
+name: 🏷️ Tag a Release - Publicar versión
+
+on:
+  push:
+    tags:
+      - 'v*'
+  workflow_dispatch:
+    inputs:
+      tag:
+        description: 'Tag a publicar (ej. v1.0.0)'
+        required: true    
+
+permissions:
+  contents: write
+
+jobs:
+  crear-release:
+    name: Crear Release
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Obtener el código y los tags
+        uses: actions/checkout@v6
+        with:
+          fetch-depth: 0
+
+      - name: Generar historial y logs de la versión
+        id: cambios
+        shell: bash
+        run: |
+          set -euo pipefail
+
+          TAG="${GITHUB_REF_NAME}"
+
+          # Buscar el tag anterior por versión
+          PREVIOUS_TAG=$(
+            git tag --sort=-version:refname |
+            grep -Fxv "$TAG" |
+            head -n 1 || true
+          )
+
+          {
+            echo "# Release $TAG"
+            echo
+            echo "**Fecha UTC:** $(date -u '+%Y-%m-%d %H:%M:%S')"
+            echo "**Commit:** $(git rev-parse "$TAG")"
+            echo
+
+            if [ -n "$PREVIOUS_TAG" ]; then
+              echo "**Versión anterior:** $PREVIOUS_TAG"
+              echo
+              echo "## Cambios incluidos"
+              echo
+              git log "$PREVIOUS_TAG..$TAG" \
+                --pretty=format:'- %h %s (%an)' 
+              echo
+              echo
+              echo "## Archivos modificados"
+              echo
+              git diff --stat "$PREVIOUS_TAG..$TAG"
+              echo
+              echo
+              echo "## Detalle de cambios"
+              echo
+              git diff --name-status "$PREVIOUS_TAG..$TAG"
+            else
+              echo "## Historial inicial"
+              echo
+              git log -n 20 "$TAG" \
+                --pretty=format:'- %h %s (%an)'
+            fi
+
+            echo
+            echo
+            echo "## Resultado de la generación"
+            echo
+            echo "Historial y estadísticas generados correctamente."
+          } > release-details.md
+
+          cat release-details.md
+
+      - name: Crear GitHub Release
+        uses: softprops/action-gh-release@v3
+        with:
+          tag_name: ${{ github.ref_name }}
+          name: Release ${{ github.ref_name }}
+          generate_release_notes: true
+          append_body: true
+          body_path: release-details.md
+          draft: false
+          prerelease: false
+
+      - name: Guardar logs como artefacto
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: logs-${{ github.ref_name }}
+          path: release-details.md
+          if-no-files-found: warn
+          retention-days: 90
