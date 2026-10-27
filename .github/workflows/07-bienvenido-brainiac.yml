@@ -16,6 +16,7 @@ jobs:
     runs-on: ubuntu-latest
     
     steps:
+      # Inhabilitamos esta parte temporalmente
       # - name: Comentario de Bienvenida
       #   uses: actions/github-script@v9.0.0
       #   with:
